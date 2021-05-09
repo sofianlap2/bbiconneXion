@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  
+  background-image: url("./images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Appopen{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  
+  background-image: url("./images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  transform: scale(1.1);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section-routes{
+  position: absolute;
+  opacity: 1;
+  filter: none;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.body-container{
+ 
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  color: #ffffff;
+}
+h1, h2, h3, h4 {
+  text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+}
+h3, h4 {
+  font-weight: normal;
+}
+p{
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
 }

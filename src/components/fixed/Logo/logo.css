@@ -1,0 +1,26 @@
+.logoandName{
+    position: fixed;
+    top: 30px;
+    left:70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.name-flex{
+    display: flex;
+    flex-direction: column;
+    margin-left:5px
+}
+.logo-span-1{
+    font-size: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.logo-span-2{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+.logoImg{
+    width: 48px;
+    height: 48px;
+}

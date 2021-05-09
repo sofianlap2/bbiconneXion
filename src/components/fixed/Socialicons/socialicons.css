@@ -1,0 +1,27 @@
+.social-icons{
+    position: fixed!important;
+    right: 50px;
+    bottom: 30px;
+}
+
+.social-icons ul {
+    flex-direction: row;
+    margin-right: -8px;
+    display: flex;
+}
+ul,li {
+    list-style: none outside none;
+    margin: 0;
+    color: #ffffff;
+}
+.social-icons ul li a{
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    background-color: transparent;
+}
+.social-icons ul li a i {
+    font-size: 24px;
+}
