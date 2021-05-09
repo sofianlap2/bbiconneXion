@@ -84,10 +84,11 @@ const Sections = ({menuBtn}) => {
       </section>
 
       <section id="services">
+        
+        <div className="service-container">
         <div className="title-service-bg">
           <h5 className="title-service-bg-h5">SERVICES</h5>
         </div>
-        <div className="service-container">
           <div className="service-title">
             <p>
               We’ve got everything you need to launch and grow your business
@@ -198,10 +199,82 @@ const Sections = ({menuBtn}) => {
             </div>
           </div>
         </div>
+        <div id="prices">
+        <div className="price-container">
+          <h2 className="price-container-title">Pricing</h2>
+          <div className="cards-container">
+
+          <div className="price-card">
+              <div className="price-title1-cont">
+              <h4 className="price-title price-title1-color">Lite</h4>
+              </div>
+              <div className="price-dollar price-dollar1">399.99$</div>
+              <div className="price-features">
+                <ul className="price-features-ul price-features-color1">
+                  <li><i className="icon fa fa-star"></i>Full Website</li>
+                  <li><i className="icon fa fa-check"></i>6 Months Future Updates</li>
+                  <li><i className="fas fa-times"></i>Customer Support</li>
+                  <li><i className="fas fa-times"></i>Cool Option</li>
+                  <li><i className="fas fa-times"></i>Documentation</li>
+                </ul>
+              </div>
+              <div className="price-footer price-footer-bg1">
+                <a className="purchase-btn purchase-btn-bg1" href="#services">Purchase</a>
+              </div>
+            </div>
+
+
+            <div className="price-card price-card2-color">
+            <div className="price-title2-cont">
+              <h4 className="price-title price-title2-color">Standard</h4>
+              </div>
+              <div className="price-dollar price-dollar2">699.99$</div>
+              <div className="price-features">
+                <ul className="price-features-ul price-features-color2">
+                  <li><i className="icon fa fa-star"></i>Full Website</li>
+                  <li><i className="icon fa fa-star"></i>1 year Future Updates</li>
+                  <li><i className="icon fa fa-check"></i>Customer Support</li>
+                  <li><i className="icon fa fa-check"></i>Cool Option</li>
+                  <li><i className="icon fa fa-check"></i>Documentation</li>
+                </ul>
+              </div>
+              <div className="price-footer price-footer-bg2">
+                <a className="purchase-btn purchase-btn-bg2" href="#!">Purchase</a>
+              </div>
+            </div>
+
+
+            <div className="price-card">
+            <div className="price-title-cont">
+              <h4 className="price-title price-title3-color">Ultimate</h4>
+              </div>
+              <div className="price-dollar price-dollar3">2499.99$</div>
+              <div className="price-features">
+                <ul className="price-features-ul price-features-color3">
+                  <li><i className="icon fa fa-star"></i>Full Website</li>
+                  <li><i className="icon fa fa-star"></i>Lifetime Future Updates</li>
+                  <li><i className="icon fa fa-star"></i>Customer Support</li>
+                  <li><i className="icon fa fa-star"></i>Cool Option</li>
+                  <li><i className="icon fa fa-check"></i>Documentation</li>
+                </ul>
+              </div>
+              <div className="price-footer price-footer-bg3">
+                <a className="purchase-btn purchase-btn-bg3" href="#!">Suscribe</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
       </section>
+      
+
+      
       <section id="projects">
         <Slider />
       </section>
+
+      
       <section id="contact">
         <div className={menu? "contact-container active" : "contact-container"}>
           <div className= "contact-part1">

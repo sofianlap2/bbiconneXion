@@ -81,7 +81,7 @@ const Sidebar = ({menuBtn}) => {
             <a  onClick={() => changeNavColorAbout()} className={navcolorAbout}  href="#about"><i className="far fa-circle fa-xs bg"></i></a>
           </li>
           <li>
-            <a onClick={() => changeNavColorServices()} className={navcolorServices}  href="#service"><i className="far fa-circle fa-xs bg"></i></a>
+            <a onClick={() => changeNavColorServices()} className={navcolorServices}  href="#services"><i className="far fa-circle fa-xs bg"></i></a>
           </li>
           <li>
             <a onClick={() => changeNavColorProjects()} className={navcolorProjects} href="#projects"><i className="far fa-circle fa-xs bg"></i></a>

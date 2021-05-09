@@ -1,7 +1,7 @@
 .menu-btn {
     position: fixed;
-    right: 70px;
-    top: 20px;
+    right: 10px;
+    top: 0;
     width: 20px;
     height: 40px;
     cursor: pointer;
@@ -49,4 +49,21 @@
 }
 .menu-btnopen .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media screen and (min-width:786px){
+    .menu-btn {
+        position: fixed;
+        right: 70px;
+        top: 20px;
+        width: 20px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
 }

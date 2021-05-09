@@ -1,0 +1,11 @@
+.gallery-container {
+    background: #1d1d1d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.slider-carousel{
+   
+}

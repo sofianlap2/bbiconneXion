@@ -29,6 +29,7 @@ section {
   z-index: -1;
 }
 .title-bg-h5 {
+  display: none;
   user-select: none;
   color: #ffffff;
   opacity: 0.075;
@@ -48,6 +49,7 @@ section {
   line-height: 1.1;
   font-weight: bold;
   margin-bottom: 16px;
+  text-align: center;
 }
 .home-container-h2 a {
   color: #ffffff;
@@ -86,6 +88,7 @@ section {
   position: relative;
 }
 .title-about-bg-h5 {
+  display: none;
   user-select: none;
   opacity: 0.075;
   position: absolute;
@@ -109,7 +112,7 @@ section {
   text-align: center !important;
 }
 .about-container-h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 1);
   line-height: 1.1;
   font-weight: bold;
@@ -128,8 +131,11 @@ section {
 /* ----------service -------------------*/
 #services {
   position: relative;
+  overflow-y: scroll;
+  height: auto;
 }
 .title-service-bg-h5 {
+  display: none;
   user-select: none;
   opacity: 0.075;
   position: absolute;
@@ -149,15 +155,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ 
 }
 .service-title {
   text-align: center;
   line-height: 1.75;
+  padding-top: 80px;
 }
 .services-table {
   display: flex;
-
+  flex-direction: column;
   max-width: 1200px;
 }
 .service-card-container {
@@ -182,6 +189,145 @@ section {
 .service-img {
   margin-right: 30px;
 }
+/*---------prices -------------*/
+
+.price-container {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.price-container-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.price-card {
+  
+  border-radius: 0.3rem;
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-right: 20px;
+}
+.price-card2-color {
+  background-color: #28a745;
+}
+.price-title-cont {
+  background: #ffffff;
+}
+.price-title2-cont {
+  background-color: #28a745;
+}
+.price-title1-color {
+  color: #3f4b62;
+}
+.price-dollar2 {
+  color: #28a745;
+  background: #ffffff;
+}
+.price-title3-color {
+  color: #28a745;
+}
+.price-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  margin-bottom: 8px;
+}
+.price-dollar1 {
+  background: #3f4b62;
+  color: #ffffff;
+}
+.price-dollar2 {
+  color: #28a745;
+  background: #ffffff;
+}
+.price-dollar3 {
+  background: #28a745;
+  color: #ffffff;
+}
+.price-dollar {
+  padding: 4px 16px;
+  font-size: 1.5rem;
+  text-align: center !important;
+}
+.price-features-ul {
+  padding: 16px 32px;
+  opacity: 1;
+  line-height: 1.75;
+  text-align: left !important;
+  opacity: 0.75;
+}
+.price-features-ul li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  color: #1d1d1d;
+  position: relative;
+  list-style: none !important;
+}
+.price-features-color1 li {
+  color: #1d1d1d;
+}
+.price-features-color2 li {
+  color: #ffffff;
+}
+.price-features-color3 li {
+  color: #1d1d1d;
+}
+.price-footer-bg1 {
+  background: rgba(0, 0, 0, 0.04);
+}
+.price-footer-bg2 {
+  background: rgba(255, 255, 255, 0.7);
+}
+.price-footer-bg3 {
+  background: rgba(0, 0, 0, 0.04);
+}
+.price-footer {
+  padding: 8px 16px;
+  text-align: center;
+}
+.purchase-btn {
+  color: #ffffff;
+  border: 1px solid transparent;
+
+  border-radius: 10rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  min-height: 46px;
+  line-height: 1.2;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.purchase-btn-bg1 {
+  background-color: #3f4b62;
+}
+.purchase-btn-bg2 {
+  background-color: #28a745;
+}
+.purchase-btn-bg3 {
+  background-color: #28a745;
+}
+.price-features-ul li i {
+  margin-right: 8px;
+}
 
 /*------------contact-part--------------*/
 #contact{
@@ -197,10 +343,11 @@ section {
 }
 
 .active{
-  transform: translateX(-1250px);
+  transform: translateX(-49%);
   transition: all 0.5s ease-out;
 }
 .contact-bg{
+  display: none;
   user-select: none;
   opacity: 0.075;
   position: absolute;
@@ -220,13 +367,13 @@ section {
     max-width: 50%;
 }
 .contact-part1-title {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   margin-bottom: 0.5rem;
   text-align: left !important;
 }
 .contact-part1-intro {
   margin-bottom: 1rem;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   font-weight: bold;
   text-align: left !important;
@@ -277,9 +424,10 @@ section {
   background: none;
   line-height: 1;
   border-radius: 10rem;
-  padding: 0.75rem 1.5rem;
+ padding: 0;
   min-height: 46px;
   font-size: 1rem;
+  z-index: 999;
 }
 /*translation*/
 
@@ -370,4 +518,61 @@ label {
 }
 .contact-part2-b2 textarea {
   color: #ffffff;
+}
+
+
+/*media-queries-----------*/
+
+@media screen and (min-width:1600px){
+  .contact-bg{
+    display: block;
+  }
+  
+}
+@media screen and (min-width:1400px){
+
+}
+@media screen and (min-width:1280px){
+
+}
+@media screen and (min-width:1024px){
+  .services-table {
+    flex-direction: row;
+  }
+  .title-bg-h5, .title-about-bg-h5, .title-service-bg-h5{
+    display: block;
+  }
+  .about-container-h2{
+    font-size: 3.5rem;
+  }
+  .price-card{
+    flex: 0 0 33.333333%;
+  max-width: 30.333333%;
+  }
+}
+@media screen and (min-width:786px){
+  
+  .contact-part1-title {
+    font-size: 1.25rem;
+
+  }
+  .contact-part1-intro {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: bold;
+    text-align: left !important;
+  }
+  .send-btn{
+    padding: 0.75rem 1.5rem;
+  }
+}
+@media screen and (min-width:411px){
+  
+}
+@media screen and (min-width:360px){
+  
+}
+@media screen and (min-width:320px){
+  
 }

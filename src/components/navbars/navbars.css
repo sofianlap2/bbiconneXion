@@ -4,6 +4,7 @@
 }
 .navbar {
   position: fixed;
+  display: none;
   bottom: 50%;
   transform: translateY(50%);
   left: 0;
@@ -64,11 +65,12 @@
   display: flex;
   position: absolute;
   
-  height: 100vh;
+  height: max-content;
   width: 100%;     
-  align-items: center;
-  padding-left: 12%;
-  
+  align-items: flex-start;
+  padding-left: 5%;
+  padding-top: 5%;
+  background-color: #1D1D1D;
  z-index: 5;
 }
 .top-bar{
@@ -76,14 +78,25 @@
   font-weight: bold;
   text-transform: uppercase;
   line-height: 0.8;
-  font-size: 6rem;
+  font-size: 1rem;
   color: white;
 }
+
 a:hover{
  color: #28a745;
 }
 .hide-bar{
-  display: none;
+  display: block;
+  
+}
+.hide-bar a {
+  text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 11%;
+    line-height: 1.7;
 }
 .bg{
   
@@ -104,4 +117,28 @@ i.fa-circle{
   color: white!important;
   background-color: white!important;
   opacity: 1!important;
+}
+
+@media screen and (min-width:1024px) {
+  .navbar {
+    display: block;
+  }
+}
+/*meeeeeeeeeeediaaaaaaaaa----------*/
+@media screen and (min-width:800px) {
+  .top-bar{
+
+    font-size: 6rem;
+  }
+  .topNavbarOpen{
+    height: 100vh;
+    align-items: center;
+    padding-left: 12%;
+    padding-top: 0;
+    background-color: transparent;
+  }
+  .hide-bar{
+    display: none;
+    
+  }
 }

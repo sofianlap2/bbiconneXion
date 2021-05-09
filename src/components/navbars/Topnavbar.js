@@ -11,7 +11,7 @@ const Topnavbar = ({menuBtn}) => {
                     <li className="top-bar"><Link  className="link" to="/gallery">GALLERY</Link></li>
                     <li className="top-bar"><Link  className="link" to="/fashiontv">BLOG</Link></li>
                     <li className="top-bar"><a  className="link" href="#!">PRIVATE SPACE</a></li>
-                    <li className="hide-bar"><a href="#home">Home</a></li>
+                    
 
                     <li className="hide-bar"><a href="#about">About</a></li>
                     <li className="hide-bar"><a href="#service">Services</a></li>
