@@ -2,6 +2,12 @@
     position: fixed;
     height: 100vh;
 }
+.show{
+  opacity: 1!important;
+}
+.hide{
+  opacity: 0.5!important;
+}
 .navbar {
   position: fixed;
   display: none;
@@ -102,7 +108,7 @@ a:hover{
   
   border-radius: 50%;
   color: white;
-
+  background-color: white;
 }
 
 i.fa-circle{
@@ -142,3 +148,4 @@ i.fa-circle{
     
   }
 }
+

@@ -34,7 +34,7 @@ const Fashion = ({menuBtn, setMenuBtn}) => {
               </h2>
               <p className="fashion-p1-description">
                 Since its inception in 1997,{" "}
-                <a href="https://www.fashiontv.com">FashionTV</a>
+                <a href="https://www.fashiontv.com">FashionTV </a>
                 has been setting the highest standards for excellence in fashion
                 and lifestyle broadcasting. The only TV equivalent to fashion
                 print media appealing to everyone interested in fashion, style,

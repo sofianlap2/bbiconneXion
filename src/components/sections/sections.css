@@ -15,11 +15,16 @@ section {
 ::-webkit-scrollbar {
   display: none;
 }
+.sections-container::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* Home sections */
 #home {
   position: relative;
 }
+
 .home-container {
   height: 100%;
   display: flex;
@@ -27,7 +32,10 @@ section {
   justify-content: center;
   flex-direction: column;
   z-index: -1;
+ 
 }
+
+
 .title-bg-h5 {
   display: none;
   user-select: none;
@@ -101,15 +109,19 @@ section {
   font-size: 10rem;
   z-index: 2;
 }
-.about-container {
+.about-wrapper{
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 75%;
-  margin: 0 auto;
   text-align: center !important;
+  margin: 0 auto;
+  width: 75%;
+}
+.about-container {
+
+  
 }
 .about-container-h2 {
   font-size: 2rem;
@@ -119,6 +131,7 @@ section {
   margin-bottom: 16px;
   text-align: center;
   width: 70%;
+    margin: 0 auto;
 }
 
 .about-container-p {

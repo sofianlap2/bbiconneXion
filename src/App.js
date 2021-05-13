@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route path="/" exact render={(props) => (<Body menuBtn={menuBtn} setMenuBtn={setMenuBtn} {...props}/>)} ></Route>
         <Route path="/gallery" exact render={(props) => (<Gallery menuBtn={menuBtn} setMenuBtn={setMenuBtn} {...props}/>)} ></Route>
-        <Route path="/blog" exact render={(props) => (<Fashion menuBtn={menuBtn} setMenuBtn={setMenuBtn} {...props}/>)} ></Route>
+        <Route path="/fashiontv" exact render={(props) => (<Fashion menuBtn={menuBtn} setMenuBtn={setMenuBtn} {...props}/>)} ></Route>
 
       </Switch>
       </div>
